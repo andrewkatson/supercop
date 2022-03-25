@@ -35,4 +35,4 @@ add_library(monero-crypto $<TARGET_OBJECTS:monero-crypto-intree>)
 
 INSTALL(FILES "${CMAKE_CURRENT_SOURCE_DIR}/include/monero/crypto/${MONERO_CRYPTO_LIBRARY}.h" DESTINATION "include/monero/crypto")
 INSTALL(FILES "${CMAKE_BINARY_DIR}/include/monero/crypto.h" DESTINATION "include/monero")
-INSTALL(TARGETS monero-crypto LIBRARY)
+INSTALL(TARGETS monero-crypto ARCHIVE DESTINATION lib LIBRARY DESTINATION lib LIBRARY)
